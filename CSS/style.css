@@ -7,6 +7,9 @@ padding: 0;
 min-height: auto;
 } /* Utilizado para quitar el border default*/
 
+hr{
+    margin-top: 10px;
+}
 .contenedor{
     width:80%;
     margin: auto;
@@ -19,8 +22,6 @@ min-height: auto;
     font-family: 'EB Garamond', serif;
     /* para los titulos de las secciones utilizo la misma fuente y posición así que he creado una global*/
 }
-
-
 /*HEADER*/
 
 header{
@@ -40,7 +41,8 @@ header{
     
 }
 header nav{
-    grid-column: 2/5; /* extiende el contenido de las columnas*/
+    grid-column: 2/4; /* extiende el contenido de las columnas*/
+    
 }
 header nav a{
     margin-right: 20px;
@@ -54,6 +56,54 @@ header nav a:hover{
     text-decoration: rgb(73, 87, 92) underline; /*cuando ponga el cursosr encima, aparecerá una línea*/
 }
 
+.inicio-header{
+    display: flex;
+    column-gap: 20px;
+}
+.inicio-header a{
+    text-decoration: none;
+    color: rgb(109, 108, 108);
+    font-weight: 200;
+    border: dashed rgb(68, 68, 68) 1px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.inicio-header a:hover{
+    opacity: 0.3;
+}
+/*BUSCADOR*/
+.buscador{
+
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+.buscador input{
+    border-radius: 15px;
+    border:1px grey solid;
+    height: 40px;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.buscador button{
+    margin-left: 10px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px solid rgb(117, 117, 117);
+    text-transform: uppercase;
+}
+.buscador button:hover{
+    opacity: 0.7;
+}
+::placeholder{
+    padding-left: 10px;
+    font-size: 13px;
+}
 /*MAIN*/
 
 main{
